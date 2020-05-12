@@ -13,6 +13,7 @@ class TeamsRoles extends \Phalcon\Mvc\Model
             'id',
             ['alias' => 'role']
         );
+	$this->setSource('teams_roles');
     }
 
     /**
@@ -38,16 +39,6 @@ class TeamsRoles extends \Phalcon\Mvc\Model
      * @var integer
      */
     protected $roles_id;
-
-    /**
-     * Returns table name mapped in the model.
-     *
-     * @return string
-     */
-    public function getSource()
-    {
-        return 'teams_roles';
-    }
 
     /**
      * Return the Team id.

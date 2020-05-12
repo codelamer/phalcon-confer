@@ -66,16 +66,7 @@ class Roles extends \Phalcon\Mvc\Model
             'roles_id',
             ['alias' => 'teamsPivot']
         );
-    }
-
-    /**
-     * Returns table name mapped in the model.
-     *
-     * @return string
-     */
-    public function getSource()
-    {
-        return 'roles';
+	$this->setSource('roles');
     }
 
     /**

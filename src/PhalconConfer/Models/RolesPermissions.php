@@ -22,6 +22,11 @@ class RolesPermissions extends \Phalcon\Mvc\Model
      */
     protected $permissions_id;
 
+    public function initialize()
+    {
+	$this->setSource('roles_permissions');
+    }
+
     /**
      * Return the Role id.
      *
@@ -42,13 +47,4 @@ class RolesPermissions extends \Phalcon\Mvc\Model
         return (int)$this->permissions_id;
     }
 
-    /**
-     * Returns table name mapped in the model.
-     *
-     * @return string
-     */
-    public function getSource()
-    {
-        return 'roles_permissions';
-    }
 }

@@ -39,16 +39,7 @@ class Permissions extends \Phalcon\Mvc\Model
             'permissions_id',
             ['alias' => 'rolesPivot']
         );
-    }
-
-    /**
-     * Returns table name mapped in the model.
-     *
-     * @return string
-     */
-    public function getSource()
-    {
-        return 'permissions';
+		$this->setSource('permissions');
     }
 
     /**

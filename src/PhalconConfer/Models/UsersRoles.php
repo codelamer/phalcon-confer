@@ -22,14 +22,9 @@ class UsersRoles extends \Phalcon\Mvc\Model
      */
     protected $roles_id;
 
-    /**
-     * Returns table name mapped in the model.
-     *
-     * @return string
-     */
-    public function getSource()
+    public function initialize()
     {
-        return 'users_roles';
+	$this->setSource('users_roles');
     }
 
     /**
