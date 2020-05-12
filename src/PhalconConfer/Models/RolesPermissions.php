@@ -47,4 +47,5 @@ class RolesPermissions extends \Phalcon\Mvc\Model
         return (int)$this->permissions_id;
     }
 
+
 }

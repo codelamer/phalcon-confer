@@ -50,6 +50,7 @@ class TeamsRoles extends \Phalcon\Mvc\Model
         return (int)$this->teams_id;
     }
 
+
     /**
      * Set the Team id.
      *

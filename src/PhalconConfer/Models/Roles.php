@@ -31,6 +31,7 @@ class Roles extends \Phalcon\Mvc\Model
     /**
      * Model initialization.
      */
+
     public function initialize()
     {
         $this->hasManyToMany(

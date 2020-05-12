@@ -46,4 +46,5 @@ class UsersRoles extends \Phalcon\Mvc\Model
     {
         return (int)$this->roles_id;
     }
+
 }
